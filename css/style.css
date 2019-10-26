@@ -681,7 +681,7 @@ pre {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Microsoft YaHei","微软雅黑";
   word-wrap: break-word;
 }
 .post-content tt {
@@ -693,7 +693,7 @@ pre {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Microsoft YaHei","微软雅黑";
   word-wrap: break-word;
 }
 .post-content pre {
@@ -703,7 +703,7 @@ pre {
   padding-left: 10px;
   overflow: auto;
   line-height: 1.5;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Microsoft YaHei","微软雅黑";
   color: #808080;
   background-color: #f9f9f9;
 }
@@ -753,7 +753,7 @@ pre {
 }
 .windows .post-content {
   font-size: 16px;
-  font-family: "Georgia", "SimSun", sans-serif;
+  font-family: "Microsoft YaHei","微软雅黑";
 }
 /*====================================================
     pagination
