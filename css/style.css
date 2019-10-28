@@ -640,7 +640,7 @@ pre {
 .post-content ul {
   margin: 0 0 24px 6px;
   padding-left: 16px;
-  list-style-type: square;
+  list-style-type: disc;
 }
 .post-content ol {
   margin: 0 0 24px 6px;
@@ -654,10 +654,10 @@ pre {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 14px;
-  list-style-type: disc;
+  list-style-type: circle;
 }
 .post-content li ul ul {
-  list-style-type: circle;
+  list-style-type: square;
 }
 .post-content li ol {
   margin-top: 0;
