@@ -14,11 +14,9 @@ Snippet 简洁而不简单，也许是一款你寻找已久hexo主题。
 [![hexo version](https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg)](http://hexo.io)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shenliyang/hexo-theme-snippet/blob/master/LICENSE)
 
-
 [主题Demo戳这里](http://shenliyang.github.io?rf=gh-demo)
 
 ![hexo-theme-snippet](http://snippet.shenliyang.com/img/snippet-screenshots1000.jpg "Snippet主题")
-
 
 ## 主题特点
 
@@ -52,7 +50,6 @@ Snippet 简洁而不简单，也许是一款你寻找已久hexo主题。
 ### 1. 环境搭建
 
 需要`Node.js` 环境、`Git` 环境以及 `Hexo` ,如果你尚未安装或者不了解 `Hexo`，请参考 [官方教程](https://hexo.io/zh-cn/docs/index.html) 进行了解以及安装。如果需要构建工具请自行安装，或使用本主题的Gulp方式。
-
 
 ### 2. 下载主题
 

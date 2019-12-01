@@ -8,8 +8,8 @@ tags: hexo
 
 ##### 1.0 主题 Hexo
 
-- [snippet](https://github.com/shenliyang/hexo-theme-snippet#hexo-theme-snippet)
-
+[^_^]:
+    [snippet](https://github.com/shenliyang/hexo-theme-snippet#hexo-theme-snippet)
 - [Hiero](https://github.com/iTimeTraveler/hexo-theme-hiero#hiero)
 
 - [JSimple](https://github.com/tangkunyin/hexo-theme-jsimple#jsimple)

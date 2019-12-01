@@ -11,3 +11,4 @@ function lazyImage(post) {
 }
 
 hexo.extend.helper.register('lazyImage', lazyImage);
+
