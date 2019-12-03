@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="狐狸F叔技术blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://lpjworld.com">
+    <!--SEO-->
+
+<meta name="keywords" content>
+
+
+<meta name="description" content="title: 浏览器快捷键category: 前端tags: JS
+
+重拾JavaScript关键点概念：javaScript是一种轻量级，解释型或即时编译型的[编程语言]与HTML进行交互，执...">
+
+
+<meta name="robots" content="all">
+<meta name="google" content="all">
+<meta name="googlebot" content="all">
+<meta name="verify" content="all">
+    <!--Title-->
+
+<title>
+    
+    狐狸F叔技术blog
+</title>
+
+<link rel="alternate" href="/atom.xml" title="狐狸F叔技术blog" type="application/atom+xml">
+
+
+<link rel="icon" href="/huli2.ico">
+
+    
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+</head></html>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='狐狸F叔'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://lpjworld.com">
+                        狐狸F叔技术blog</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/数据库/"><i class="fa "></i>
+                                数据库</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/工具/"><i class="fa "></i>
+                                工具</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/感悟/"><i class="fa "></i>
+                                感悟</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="">
+            
+            NO Title!
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2019/12/03</span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <p>title: 浏览器快捷键<br>category: 前端<br>tags: JS</p>
+<p><img src="/img/19-12-03.jpg" alt="重拾JavaScript关键点"></p>
+<h3 id="重拾JavaScript关键点"><a href="#重拾JavaScript关键点" class="headerlink" title="重拾JavaScript关键点"></a>重拾JavaScript关键点</h3><p><strong>概念</strong>：<em>javaScript是一种轻量级，解释型或即时编译型的[编程语言]与HTML进行交互，执行标准是ECMAScript。</em></p>
+<p><strong>语法</strong>：对大小写敏感，函数和变量</p>
+<p><strong>空格</strong>：javaScript会忽略多余的空格，提高可读性</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">var person</span> = <span class="string">"Hege"</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>数据类型</strong>：Symbol是ES6引入了一种新的原始数据类型，表示独一无二的值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">值类型：字符串（<span class="built_in">String</span>）、数字(<span class="built_in">Number</span>)、布尔(<span class="built_in">Boolean</span>)、对空（Null）、未定义（Undefined）、<span class="built_in">Symbol</span>。</span><br><span class="line">引用数据类型：对象(<span class="built_in">Object</span>)、数组(<span class="built_in">Array</span>)、函数(<span class="built_in">Function</span>)。</span><br></pre></td></tr></table></figure>
+
+<p><strong>函数</strong>：向未声明的JavaScript 变量分配值，该变量将自动作为window的一个属性。==可delete删除==</p>
+<p><strong>字符串</strong>：使用内置属性length来计算字符串的长度</p>
+<p><strong>特殊字符</strong>：反斜杠(\)是一个转义字符，可转撇号，换行，引号，等其他特殊字符。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>charAt()</td>
+<td>返回指定索引位置的字符</td>
+</tr>
+<tr>
+<td>charCodeAt()</td>
+<td>返回指定索引位置字符的 Unicode 值</td>
+</tr>
+<tr>
+<td>concat()</td>
+<td>连接两个或多个字符串，返回连接后的字符串</td>
+</tr>
+<tr>
+<td>fromCharCode()</td>
+<td>将 Unicode 转换为字符串</td>
+</tr>
+<tr>
+<td>indexOf()</td>
+<td>返回字符串中检索指定字符第一次出现的位置</td>
+</tr>
+<tr>
+<td>lastIndexOf()</td>
+<td>返回字符串中检索指定字符最后一次出现的位置</td>
+</tr>
+<tr>
+<td>localeCompare()</td>
+<td>用本地特定的顺序来比较两个字符串</td>
+</tr>
+<tr>
+<td>match()</td>
+<td>找到一个或多个正则表达式的匹配</td>
+</tr>
+<tr>
+<td>replace()</td>
+<td>替换与正则表达式匹配的子串</td>
+</tr>
+<tr>
+<td>search()</td>
+<td>检索与正则表达式相匹配的值</td>
+</tr>
+<tr>
+<td>slice()</td>
+<td>提取字符串的片断，并在新的字符串中返回被提取的部分</td>
+</tr>
+<tr>
+<td>split()</td>
+<td>把字符串分割为子字符串数组</td>
+</tr>
+<tr>
+<td>substr()</td>
+<td>从起始索引号提取字符串中指定数目的字符</td>
+</tr>
+<tr>
+<td>substring()</td>
+<td>提取字符串中两个指定的索引号之间的字符</td>
+</tr>
+<tr>
+<td>toLocaleLowerCase()</td>
+<td>根据主机的语言环境把字符串转换为小写，只有几种语言（如土耳其语）具有地方特有的大小写映射</td>
+</tr>
+<tr>
+<td>toLocaleUpperCase()</td>
+<td>根据主机的语言环境把字符串转换为大写，只有几种语言（如土耳其语）具有地方特有的大小写映射</td>
+</tr>
+<tr>
+<td>toLowerCase()</td>
+<td>把字符串转换为小写</td>
+</tr>
+<tr>
+<td>toString()</td>
+<td>返回字符串对象值</td>
+</tr>
+<tr>
+<td>toUpperCase()</td>
+<td>把字符串转换为大写</td>
+</tr>
+<tr>
+<td>trim()</td>
+<td>移除字符串首尾空白</td>
+</tr>
+<tr>
+<td>valueOf()</td>
+<td>返回某个字符串对象的原始值</td>
+</tr>
+</tbody></table>
+<p>typeof：用typeof检测null返回是object</p>
+<p>正则表达式：</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">search()方法用于检索字符串中子字符串，并返回子串的起始位置</span><br><span class="line">replace()方法用于在字符串中用一些字符替换另一些字符</span><br><span class="line">i  对大小写不敏感的匹配</span><br><span class="line">g  全局匹配查找所有匹配而非在找到第一个后停止</span><br><span class="line">m  执行多行匹配</span><br><span class="line">[abc]  查找括号之间的任何字符</span><br><span class="line">[<span class="number">0</span><span class="number">-9</span>]  查找任何从<span class="number">0</span><span class="number">-9</span>的数字</span><br><span class="line">(x|y)  查找任何以|分隔的选项</span><br><span class="line">\d  查找数字</span><br><span class="line">\s</span><br><span class="line">$  匹配输入字符串的结尾位置</span><br><span class="line">()  标记子表达式的开始和结束位置</span><br><span class="line">*  匹配前面的<span class="number">0</span>次或多次</span><br><span class="line">+  匹配前面的一次或多次</span><br><span class="line">.  匹配除换行符\n之外的任何单字符</span><br><span class="line">[  标记一个中括号表达式的开始</span><br><span class="line">?  匹配前面的<span class="number">0</span>次或一次</span><br><span class="line">\  转义字符</span><br><span class="line">^  匹配输入字符串的开始位置，除非在方括号表达式中使用。</span><br></pre></td></tr></table></figure>
+
+<p>错误：可使用try-catch</p>
+<p>变量提升：变量可以在使用后声明，也就是变量可以先使用再声明。</p>
+<p>严格模式：”use strict”的目的是指定代码在严格条件下执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">消除代码运行的一些不安全之处，保证代码运行的安全</span><br><span class="line">提高编译器效果，增加运行速度</span><br><span class="line">为未来新版本的JavaScript做好铺垫</span><br></pre></td></tr></table></figure>
+
+<p>let和const：</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span>声明的变量只在<span class="keyword">let</span>命令所在的代码块内有效</span><br><span class="line"><span class="keyword">const</span>声明一个只读的常量，一旦声明，常量的值就不能改变</span><br></pre></td></tr></table></figure>
+
+<p>JSON：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">JSON</span>.parse()  用于将一个<span class="built_in">JSON</span>字符串转换为JavaScript对象</span><br><span class="line"><span class="built_in">JSON</span>.stringify()  用于将JavaScript值转换为<span class="built_in">JSON</span>字符串</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript:void(0)含义指定要计算一个表达式但是不返回值</p>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">href=<span class="string">"#"</span>与href=<span class="string">"javascript:void(0)"</span>的区别</span><br><span class="line"><span class="comment">#包含了一个位置信息，默认的锚是#top也就是网页的上端</span></span><br><span class="line"><span class="section">而JavaScript:void(0)仅仅表示一个死链接。</span></span><br><span class="line">在页面很长的时候会使用<span class="comment">#来定位页面的具体位置，格式为：#+id</span></span><br></pre></td></tr></table></figure>
+
+<p>帕斯卡拼写法(PascalCase)主要c语言</p>
+<p>驼峰法：jQuery及其他JavaScript库都使用驼峰法</p>
+<p>箭头函数: () =&gt; {函数声明}</p>
+<p>addEventListener()方法</p>
+<ul>
+<li>addEventListener()方法用于向指定元素添加事件句柄。</li>
+<li>addEventListener()方法添加的事件句柄不会覆盖已存在的事件句柄</li>
+<li>element.addEventListener(event,function,useCapture)</li>
+</ul>
+<p>事件冒泡或事件捕获:</p>
+<p>  1.在冒泡中，内部元素的事件会先触发，然后再触发外部元素</p>
+<p>  2.在捕获中，外部元素的事件会先被触发，然后才会触发内部元素的事件</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">add<span class="constructor">EventListener(<span class="params">event</span>,<span class="params">function</span>,<span class="params">useCapture</span>)</span>;</span><br><span class="line">add<span class="constructor">EventListener(<span class="params">event</span>,<span class="params">function</span>,<span class="params">false</span>)</span>;</span><br><span class="line">默认值为<span class="literal">false</span>,即冒泡传递，当值为<span class="literal">true</span>时，事件使用捕获传递。</span><br></pre></td></tr></table></figure>
+
+<p>NodeList：是一个从文档中获取的节点列表(集合)</p>
+<p>  注意：节点列表不是一个数组！可通过索引获取元素但是无法使用数组的方法：valueOf，pop，push，join</p>
+<p>  注意：全局变量不能通过delete操作符删除，而window属性上定义的变量可以通过delete操作符进行删除</p>
+<p>AJAX = 异步JavaScript和XML</p>
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">狐狸F叔技术blog</a>
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+    <a href="/2019/10/19/09blog教程/" class="next-post btn btn-default" title='blog小白搭建手册--hexo'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            blog小白搭建手册--hexo</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
+    
+</div>
+
+<div id="comments">
+    
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NzExMS8yMzYxMQ==">
+    <script type="text/javascript">
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+    </script>
+</div>
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#重拾JavaScript关键点"><span class="toc-text">重拾JavaScript关键点</span></a></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2019
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
