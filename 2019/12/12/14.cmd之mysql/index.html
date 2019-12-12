@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="狐狸F叔技术blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://lpjworld.com">
+    <!--SEO-->
+
+<meta name="keywords" content="mysql">
+
+
+<meta name="description" content="
+cmd之mysql1.0  mysql常用命令  1.1  cmd进退mysql命令：
+   12mysql -u 用户名 -P  --进入mysqlquit或exit  --退出mysql,...">
+
+
+<meta name="robots" content="all">
+<meta name="google" content="all">
+<meta name="googlebot" content="all">
+<meta name="verify" content="all">
+    <!--Title-->
+
+<title>
+    
+    mysql命令大全 |
+    
+    狐狸F叔技术blog
+</title>
+
+<link rel="alternate" href="/atom.xml" title="狐狸F叔技术blog" type="application/atom+xml">
+
+
+<link rel="icon" href="/huli2.ico">
+
+    
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+</head></html>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='狐狸F叔'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://lpjworld.com">
+                        狐狸F叔技术blog</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/数据库/"><i class="fa "></i>
+                                数据库</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/工具/"><i class="fa "></i>
+                                工具</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/感悟/"><i class="fa "></i>
+                                感悟</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="mysql命令大全">
+            
+            mysql命令大全
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/数据库/">数据库</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/mysql/">mysql</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2019/12/12</span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <p><img src="/img/19-12-12mysql.jpg" alt="mysql命令大全"></p>
+<h3 id="cmd之mysql"><a href="#cmd之mysql" class="headerlink" title="cmd之mysql"></a>cmd之mysql</h3><h5 id="1-0-mysql常用命令"><a href="#1-0-mysql常用命令" class="headerlink" title="1.0  mysql常用命令"></a>1.0  mysql常用命令</h5><p>  1.1  cmd进退mysql命令：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql -u 用户名 -P  --进入mysql</span><br><span class="line">quit或exit  --退出mysql,不需要;</span><br></pre></td></tr></table></figure>
+
+<p>  1.2  mysql通用命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">select version();  --查看mysql的版本号</span><br><span class="line">select user();  --显示用户名</span><br><span class="line">select now();  --显示当前时间</span><br><span class="line">show processlist;  --查看mysql当前用户占用的连接数</span><br><span class="line">select current_date();  --查看mysql的当前日期</span><br><span class="line">show databases;  --显示当前所有存在的数据库</span><br><span class="line">use 数据库名;  --选择使用数据库,不需要;</span><br><span class="line">select database();  --显示当前选择的数据库</span><br><span class="line">show tables;  --显示当前数据库中存在的表</span><br><span class="line">desc 表名;或describe 表名;或show columns from 表名;  --显示表的结构</span><br><span class="line">select * from 表名;  --显示表内容</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-0-mysql的curd基本命令"><a href="#2-0-mysql的curd基本命令" class="headerlink" title="2.0  mysql的curd基本命令"></a>2.0  mysql的curd基本命令</h5><h6 id="2-1-数据库："><a href="#2-1-数据库：" class="headerlink" title="2.1  数据库："></a>2.1  数据库：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create database 数据库名;  --创建一个数据库</span><br><span class="line">show databases;  --查看所有数据库</span><br><span class="line">use 数据库名;  --选择使用数据库</span><br><span class="line">drop database 数据库名;  --删除数据库</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-2-表操作："><a href="#2-2-表操作：" class="headerlink" title="2.2  表操作："></a>2.2  表操作：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create table 表名 (列名 属性值，属性值);</span><br><span class="line">select * from 表名;</span><br><span class="line">insert into 表名 values (列值，列值);</span><br><span class="line">load data local infile &quot;路径/文件名&quot; into table 表名;  --文本添加值</span><br><span class="line">update 表名 set 列名 = 列值, 列名 = 列值 where id = 值;</span><br><span class="line">delete from 表名 where id = 值;</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-3-表结构"><a href="#2-3-表结构" class="headerlink" title="2.3  表结构 :"></a>2.3  表结构 :</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">check table 表名;  --检测表是否完好</span><br><span class="line">repair table 表名;  --修复表</span><br><span class="line">alter table 旧表名 rename 新表名;</span><br><span class="line">desc 表名;或show columns from 表名;</span><br><span class="line">alter table 表名 add 字段 类型 其他;  --增加字段</span><br><span class="line">alter table 表名 add 后字段名字段 类型 其他 after 前个字段名;  --增加指定列字段</span><br><span class="line">alter table 表名 drop column 列名;   --删除字段</span><br><span class="line">alter table 表名 change 前字段 后字段 属性名值  --修改字段名，必须要属性值</span><br><span class="line">alter table 表名 alter column drop default; --删除默认值</span><br><span class="line">alter table 表名 alter column set default 默认值;  --修改默认值</span><br><span class="line">alter table 表名 modify 字段 属性值，其他  --修改字段属性</span><br><span class="line">alter table 表名 add primary key(字段名)  --给字段添加primary key</span><br><span class="line">alter table 表名 drop primary key;  --删除primary key</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-4-表与表之间的关系-主外键关联"><a href="#2-4-表与表之间的关系-主外键关联" class="headerlink" title="2.4  表与表之间的关系(主外键关联)"></a>2.4  表与表之间的关系(主外键关联)</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table 主表名 add constraint fk_主外键别名 foreign key(主表内关联的外键id名称) reference 外表名(外表主键id)</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-0-数据的备份与恢复："><a href="#3-0-数据的备份与恢复：" class="headerlink" title="3.0  数据的备份与恢复："></a>3.0  数据的备份与恢复：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">check table 表名;  --检测表是否完好</span><br><span class="line">repair table 表名;  --修复表</span><br><span class="line"></span><br><span class="line">注意：导出数据得在cmd命令窗口进行，而不是mysql命令窗口</span><br><span class="line">命令行导出：</span><br><span class="line">1.导出某个数据库：</span><br><span class="line">mysqldump -u root -p 数据库名称 &gt; 路径\导出名</span><br><span class="line">2.导出多个数据库：</span><br><span class="line">mysqldump -u root -p -database 数据库名，数据库名</span><br><span class="line">3.导出某个数据库的某个表：</span><br><span class="line">mysqldump -u root -p 数据库名 表名 &gt; 路径\导出名</span><br><span class="line">注意：-d，只备份结构，不备份数据，也可以使用-no-data代替-d,效果一样</span><br><span class="line">mysqldump -u root -p -d 数据库名 &gt; 路径\导出名</span><br><span class="line"></span><br><span class="line">命令行导入：</span><br><span class="line">1.未连接数据库时：</span><br><span class="line">mysql -h localhost -u root -p 数据库名 &lt; sqlFilePath(最后没有分号)</span><br><span class="line">2.已连接数据库时：</span><br><span class="line">source sqlFilePath(最后没有分号)</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">狐狸F叔技术blog</a>
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+    <a href="/2019/12/03/重拾JavaScript关键点/" class="next-post btn btn-default" title='重拾JavaScript关键点'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            重拾JavaScript关键点</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
+    
+</div>
+
+<div id="comments">
+    
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NzExMS8yMzYxMQ==">
+    <script type="text/javascript">
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+    </script>
+</div>
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#cmd之mysql"><span class="toc-text">cmd之mysql</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-0-mysql常用命令"><span class="toc-text">1.0  mysql常用命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-0-mysql的curd基本命令"><span class="toc-text">2.0  mysql的curd基本命令</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#2-1-数据库："><span class="toc-text">2.1  数据库：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-2-表操作："><span class="toc-text">2.2  表操作：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-3-表结构"><span class="toc-text">2.3  表结构 :</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-4-表与表之间的关系-主外键关联"><span class="toc-text">2.4  表与表之间的关系(主外键关联)</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-0-数据的备份与恢复："><span class="toc-text">3.0  数据的备份与恢复：</span></a></li></ol></li></ol></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2019
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
